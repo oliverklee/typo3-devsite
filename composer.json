@@ -1,0 +1,22 @@
+{
+  "name": "oliverklee/typo3-devsite",
+  "type": "typo3-cms-extension",
+  "version": "1.0.0",
+  "description": "This is a TYPO3 extension that contains the basics of a site which I use for developing in TYPO3.",
+  "authors": [
+    {
+      "name": "Oliver Klee",
+      "role": "Developer",
+      "homepage": "https://www.oliverklee.de"
+    }
+  ],
+  "license": ["GPL-3.0+"],
+  "replace": {
+    "typo3-devsite": "self.version",
+    "typo3-ter/typo3-devsite": "self.version"
+  },
+  "require": {
+    "php": ">=5.5.0,<8.0",
+    "typo3/cms-core": ">=6.2.0,<8.0"
+  }
+}
