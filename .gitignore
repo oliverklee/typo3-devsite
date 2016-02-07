@@ -1,20 +1,22 @@
-## TYPO3 v6.2
-# Ignore several upload and file directories.
-/fileadmin/user_upload/
-/fileadmin/_temp_/
-/fileadmin/_processed_/
-/uploads/
-# Ignore cache
-/typo3conf/temp_CACHED*
-/typo3conf/temp_fieldInfo.php
-/typo3conf/deprecation_*.log
-/typo3conf/AdditionalConfiguration.php
-# Ignore system folders, you should have them symlinked.
-# If not comment out the following entries.
-/typo3
-/typo3_src
-/typo3_src-*
-/.htaccess
-/index.php
-# Ignore temp directory.
-/typo3temp/
+#########################
+# global ignore file
+########################
+# ignoring temporary files (left by e.g. vim)
+# ignoring by common IDE's used directories/files
+# dont ignore .rej and .orig as we want to see/clean files after conflict resolution
+#
+# for local exclude patterns please edit .git/info/exclude
+#
+*~
+*.bak
+*.idea
+*.project
+*.swp
+.buildpath
+.cache
+.project
+.session
+.settings
+.TemporaryItems
+.webprj
+nbproject
