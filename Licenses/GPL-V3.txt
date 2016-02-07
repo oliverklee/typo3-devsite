@@ -1,0 +1,5 @@
+jQuery and Twitter Bootstrap are licensed under the MIT license.
+
+The rest is licensed under the Gnu Public License V3.0.
+
+All license texts can be found in the Licenses folder.
