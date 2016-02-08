@@ -30,19 +30,30 @@ config {
 [global]
 
 page = PAGE
-page.10 = FLUIDTEMPLATE
-page.10 {
-	file = EXT:typo3-devsite/Resources/Private/Templates/Site.html
-	layoutRootPaths {
-		10 = EXT:typo3-devsite/Resources/Private/Layouts
+page {
+	includeJS {
+		jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.0.min.js
+		jQuery {
+			disableCompression = 1
+			excludeFromConcatenation = 1
+			forceOnTop = 1
+		}
 	}
-	templateRootPaths {
-		10 = EXT:typo3-devsite/Resources/Private/Templates
-	}
-	partialRootPaths {
-		10 = EXT:typo3-devsite/Resources/Private/Partials
-	}
-	variables {
-		content < styles.content.get
+
+	10 = FLUIDTEMPLATE
+	10 {
+		file = EXT:typo3-devsite/Resources/Private/Templates/Site.html
+		layoutRootPaths {
+			10 = EXT:typo3-devsite/Resources/Private/Layouts
+		}
+		templateRootPaths {
+			10 = EXT:typo3-devsite/Resources/Private/Templates
+		}
+		partialRootPaths {
+			10 = EXT:typo3-devsite/Resources/Private/Partials
+		}
+		variables {
+			content < styles.content.get
+		}
 	}
 }
