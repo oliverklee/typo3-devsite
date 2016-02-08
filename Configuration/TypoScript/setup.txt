@@ -31,12 +31,29 @@ config {
 
 page = PAGE
 page {
+	includeCSS {
+		bootstrap = EXT:typo3-devsite/Resources/Public/Css/bootstrap.min.css
+		bootstrap {
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		bootstrap-theme = EXT:typo3-devsite/Resources/Public/Css/bootstrap.theme.min.css
+		bootstrap-theme {
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+	}
 	includeJS {
 		jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.0.min.js
 		jQuery {
 			disableCompression = 1
 			excludeFromConcatenation = 1
 			forceOnTop = 1
+		}
+		bootstrap = EXT:typo3-devsite/Resources/Public/JavaScript/bootstrap.min.js
+		bootstrap {
+			disableCompression = 1
+			excludeFromConcatenation = 1
 		}
 	}
 
