@@ -2,7 +2,7 @@
 defined('TYPO3_MODE') or die('Access denied.');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-  $_EXTKEY,
+  'typo3-devsite',
   'Configuration/TypoScript',
   'TYPO3 development site'
 );
