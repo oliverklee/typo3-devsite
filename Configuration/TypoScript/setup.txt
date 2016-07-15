@@ -20,13 +20,13 @@ config {
     tx_realurl_enable = 1
 }
 
-[globalVar = GP:L=1]
-config {
-    language = en
-    sys_language_uid = 1
-    locale_all = en_US
-    htmlTag_langKey = en_US
-}
+[globalVar =  GP:L=1]
+    config {
+        language = en
+        sys_language_uid = 1
+        locale_all = en_US
+        htmlTag_langKey = en_US
+    }
 [global]
 
 page = PAGE
@@ -37,12 +37,14 @@ page {
             disableCompression = 1
             excludeFromConcatenation = 1
         }
+
         bootstrap-theme = EXT:typo3-devsite/Resources/Public/Css/bootstrap-theme.css
         bootstrap-theme {
             disableCompression = 1
             excludeFromConcatenation = 1
         }
     }
+
     includeJSLibs {
         jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.4.js
         jQuery {
@@ -51,6 +53,7 @@ page {
             forceOnTop = 1
         }
     }
+
     includeJSFooter {
         bootstrap = EXT:typo3-devsite/Resources/Public/JavaScript/bootstrap.js
         bootstrap {
@@ -66,14 +69,37 @@ page {
         layoutRootPaths {
             10 = EXT:typo3-devsite/Resources/Private/Layouts
         }
+
         templateRootPaths {
             10 = EXT:typo3-devsite/Resources/Private/Templates
         }
+
         partialRootPaths {
             10 = EXT:typo3-devsite/Resources/Private/Partials
         }
+
         variables {
             content < styles.content.get
         }
     }
 }
+
+navigation = HMENU
+navigation {
+    entryLevel = 0
+
+    1 = TMENU
+    1 {
+        expAll = 1
+
+        NO.allWrap = <li>|</li>
+
+        CUR = 1
+        CUR.allWrap = <li class="active">|</li>
+
+        ACT = 1
+        ACT.allWrap = <li class="active">|</li>
+    }
+}
+
+page.10.variables.navigation < navigation

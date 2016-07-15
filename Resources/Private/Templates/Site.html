@@ -1,7 +1,18 @@
-<f:layout name="Default" />
+<f:layout name="Default"/>
 
 <f:section name="main">
-    <div id="content">
+    <nav class="navbar navbar-default container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+                TYPO3 Dev site
+            </a>
+        </div>
+        <ul class="nav navbar-nav">
+            {navigation -> f:format.raw()}
+        </ul>
+    </nav>
+
+    <main class="container">
         <f:format.html parseFuncTSPath="">{content}</f:format.html>
-    </div>
+    </main>
 </f:section>
