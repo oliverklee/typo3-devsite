@@ -37,7 +37,7 @@ page {
 			disableCompression = 1
 			excludeFromConcatenation = 1
 		}
-		bootstrap-theme = EXT:typo3-devsite/Resources/Public/Css/bootstrap.theme.min.css
+		bootstrap-theme = EXT:typo3-devsite/Resources/Public/Css/bootstrap-theme.min.css
 		bootstrap-theme {
 			disableCompression = 1
 			excludeFromConcatenation = 1
