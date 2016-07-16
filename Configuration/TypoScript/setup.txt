@@ -79,6 +79,8 @@ page {
         }
 
         variables {
+            siteName = TEXT
+            siteName.data = TSFE:TYPO3_CONF_VARS|SYS|sitename
             content < styles.content.get
         }
     }
