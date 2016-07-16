@@ -20,7 +20,7 @@ config {
     tx_realurl_enable = 1
 }
 
-[globalVar =  GP:L=1]
+[globalVar = GP:L=1]
     config {
         language = en
         sys_language_uid = 1
@@ -105,3 +105,17 @@ navigation {
 }
 
 page.10.variables.navigation < navigation
+
+breadcrumbs = HMENU
+breadcrumbs {
+    special = rootline
+    special.range = 0|-1
+    includeNotInMenu = 1
+    1 = TMENU
+    1.NO.allWrap = <li> | </li>
+
+    1.CUR = 1
+    1.CUR.allWrap = <li class="active> | </li>
+}
+
+page.10.variables.breadcrumbs < breadcrumbs

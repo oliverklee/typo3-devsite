@@ -12,6 +12,10 @@
         </ul>
     </nav>
 
+    <ol class="breadcrumb container">
+        {breadcrumbs -> f:format.raw()}
+    </ol>
+
     <main class="container">
         <f:format.html parseFuncTSPath="">{content}</f:format.html>
     </main>
