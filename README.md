@@ -31,3 +31,8 @@ For TYPO3 CMS 6.2, the use of CSS Styled Content is recommended.
 3. In your TypoScript template, include the following static templates:
     * CSS Styled Content (css_styled_content)
     * TYPO3 development site (typo3-devsite)
+
+### favicon.ico
+
+There's a small favicon.ico in ```Resources/Public/Icons/```
+for copying to your site root.
