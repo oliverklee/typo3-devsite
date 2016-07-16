@@ -55,6 +55,7 @@ page {
             forceOnTop = 1
         }
     }
+
     # The version with the "lL" is for TYPO3 CMS 6.2
     includeJSlibs {
         jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.4.js
@@ -92,7 +93,15 @@ page {
         variables {
             siteName = TEXT
             siteName.data = TSFE:TYPO3_CONF_VARS|SYS|sitename
-            content < styles.content.get
+            content = CONTENT
+            content {
+                table = tt_content
+                select {
+                    orderBy = sorting
+                    where = colPos=0
+                    languageField = sys_language_uid
+                }
+            }
         }
     }
 }
