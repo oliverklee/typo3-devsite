@@ -43,13 +43,15 @@ page {
             excludeFromConcatenation = 1
         }
     }
-    includeJSFooter {
+    includeJSLibs {
         jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.4.js
         jQuery {
             disableCompression = 1
             excludeFromConcatenation = 1
             forceOnTop = 1
         }
+    }
+    includeJSFooter {
         bootstrap = EXT:typo3-devsite/Resources/Public/JavaScript/bootstrap.js
         bootstrap {
             disableCompression = 1
