@@ -45,6 +45,7 @@ page {
         }
     }
 
+    # The version with the "L" is for TYPO3 CMS >= 7.6.
     includeJSLibs {
         jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.4.js
         jQuery {
@@ -53,8 +54,17 @@ page {
             forceOnTop = 1
         }
     }
+    # The version with the "lL" is for TYPO3 CMS 6.2
+    includeJSlibs {
+        jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.4.js
+        jQuery {
+            disableCompression = 1
+            excludeFromConcatenation = 1
+            forceOnTop = 1
+        }
+    }
 
-    includeJSFooter {
+    includeJSFooterlibs {
         bootstrap = EXT:typo3-devsite/Resources/Public/JavaScript/bootstrap.js
         bootstrap {
             disableCompression = 1
