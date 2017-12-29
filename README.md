@@ -1,4 +1,4 @@
-# typo3-devsite
+# TYPO3 development site extension
 
 [![Flattr this git repo](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?fid=45y2xw&url=https%3A%2F%2Fgithub.com%2Foliverklee%2Ftypo3-devsite)
 
