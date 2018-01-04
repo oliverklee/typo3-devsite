@@ -1,6 +1,10 @@
 # TYPO3 development site extension
 
-[![Flattr this git repo](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?fid=45y2xw&url=https%3A%2F%2Fgithub.com%2Foliverklee%2Ftypo3-devsite)
+[![Build Status](https://travis-ci.org/oliverklee/typo3-devsite.svg?branch=master)](https://travis-ci.org/oliverklee/typo3-devsite)
+[![Latest Stable Version](https://poser.pugx.org/oliverklee/typo3-devsite/v/stable.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
+[![Total Downloads](https://poser.pugx.org/oliverklee/typo3-devsite/downloads.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
+[![Latest Unstable Version](https://poser.pugx.org/oliverklee/typo3-devsite/v/unstable.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
+[![License](https://poser.pugx.org/oliverklee/typo3-devsite/license.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
 
 This is a TYPO3 extension that contains the basics of a site which
 I use for developing in TYPO3. It helps to create a working site
