@@ -1,21 +1,47 @@
 {
     "name": "oliverklee/typo3-devsite",
-    "description": "TYPO3 extension that contains the basics of a site which I use for developing in TYPO3.",
+    "description": "TYPO3 extension that contains the basics of a site which Oliver Klee uses for developing in TYPO3.",
     "type": "typo3-cms-extension",
-    "license": "GPL-3.0+",
+    "keywords": [
+        "sitepackage"
+    ],
+    "homepage": "https://www.oliverklee.de/typo3-services/typo3-extensions.html",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Oliver Klee",
-            "role": "Developer",
-            "homepage": "https://www.oliverklee.de"
+            "email": "typo3-coding@oliverklee.de",
+            "homepage": "https://www.oliverklee.de",
+            "role": "developer"
         }
     ],
+    "support": {
+        "issues": "https://github.com/oliverklee/typo3-devsite/issues",
+        "source": "https://github.com/oliverklee/typo3-devsite"
+    },
     "require": {
-        "php": "^5.6.0 || ~7.0.0 || ~7.1.0",
         "typo3/cms-core": "^6.2.0 || ^7.6.0 || ^8.7.0"
     },
+    "require-dev": {
+    },
     "replace": {
-        "typo3-devsite": "self.version",
+        "typo3_devsite": "self.version",
         "typo3-ter/typo3-devsite": "self.version"
+    },
+    "autoload": {
+    },
+    "autoload-dev": {
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.typo3.org/"
+        }
+    ],
+    "config": {
+    },
+    "scripts": {
+    },
+    "extra": {
     }
 }
