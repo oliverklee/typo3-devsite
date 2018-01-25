@@ -20,9 +20,9 @@
         "source": "https://github.com/oliverklee/typo3-devsite"
     },
     "require": {
-        "typo3/cms-core": "^6.2 || ^7.6 || ^8.7",
-        "typo3/cms-fluid": "^6.2 || ^7.6 || ^8.7",
-        "typo3/cms-frontend": "^6.2 || ^7.6 || ^8.7"
+        "typo3/cms-core": "^6.2.14 || ^7.6.23 || ^8.7.9",
+        "typo3/cms-fluid": "^6.2.14 || ^7.6.23 || ^8.7.9",
+        "typo3/cms-frontend": "^6.2.14 || ^7.6.23 || ^8.7.9"
     },
     "require-dev": {
         "helhum/typo3-composer-setup": "^0.5.1"
