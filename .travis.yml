@@ -28,4 +28,5 @@ install:
 script:
 - >
   echo;
-  echo "Nothing to do yet.";
+  echo "Linting all PHP files";
+  composer php-lint;
