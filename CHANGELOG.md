@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+- lint the TypoScript
 - Composer script for linting the PHP files
 
 ### Changed
