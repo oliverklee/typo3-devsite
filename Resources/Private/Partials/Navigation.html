@@ -1,0 +1,14 @@
+<html xmlns:f="https://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<nav class="navbar navbar-default container">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+            {siteName}
+        </a>
+    </div>
+    <ul class="nav navbar-nav">
+        {navigation -> f:format.raw()}
+    </ul>
+</nav>
+
+</html>

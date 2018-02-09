@@ -1,1 +1,15 @@
-<f:render section="main"/>
+<html xmlns:f="https://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="container">
+    <f:render partial="Navigation" arguments="{siteName: siteName, navigation: mainNavigation}"/>
+    <f:render partial="Breadcrumbs" arguments="{breadcrumbs: breadcrumbs}"/>
+
+    <main class="container">
+        <div class="row">
+            <f:render partial="SubNavigation" arguments="{navigation: subNavigation}"/>
+            <f:render section="main"/>
+        </div>
+    </main>
+</div>
+
+</html>
