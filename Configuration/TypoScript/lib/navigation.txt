@@ -12,6 +12,7 @@ lib {
                 ATagParams = class="nav-link"
             }
 
+            CUR < .NO
             CUR = 1
             CUR.allWrap = <li class="nav-item active"> | </li>
 
@@ -27,13 +28,16 @@ lib {
         1 {
             expAll = 1
 
-            NO.allWrap = <li>|</li>
+            NO {
+                allWrap = <li class="nav-item"> | </li>
+                ATagParams = class="nav-link"
+            }
 
+            CUR < .NO
             CUR = 1
-            CUR.allWrap = <li class="active">|</li>
+            CUR.allWrap = <li class="nav-item active"> | </li>
 
-            ACT = 1
-            ACT.allWrap = <li class="active">|</li>
+            ACT < .CUR
         }
     }
 
