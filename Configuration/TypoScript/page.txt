@@ -1,0 +1,77 @@
+page = PAGE
+page {
+    includeCSSLibs {
+        bootstrap = EXT:typo3-devsite/Resources/Public/Css/bootstrap.css
+        bootstrap {
+            disableCompression = 1
+            excludeFromConcatenation = 1
+        }
+
+        bootstrap-theme = EXT:typo3-devsite/Resources/Public/Css/bootstrap-theme.css
+        bootstrap-theme {
+            disableCompression = 1
+            excludeFromConcatenation = 1
+        }
+    }
+
+    # The version with the "L" is for TYPO3 CMS >= 7.6.
+    # jQuery intentionally does not get included in the footer so extensions like mkforms
+    # that require jQuery in the BODY don't break.
+    includeJSLibs {
+        jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.4.js
+        jQuery {
+            disableCompression = 1
+            excludeFromConcatenation = 1
+            forceOnTop = 1
+        }
+    }
+
+    # The version with the "lL" is for TYPO3 CMS 6.2
+    # jQuery intentionally does not get included in the footer so extensions like mkforms
+    # that require jQuery in the BODY don't break.
+    includeJSlibs {
+        jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.4.js
+        jQuery {
+            disableCompression = 1
+            excludeFromConcatenation = 1
+            forceOnTop = 1
+        }
+    }
+
+    includeJSFooterlibs {
+        bootstrap = EXT:typo3-devsite/Resources/Public/JavaScript/bootstrap.js
+        bootstrap {
+            disableCompression = 1
+            excludeFromConcatenation = 1
+            async = 1
+        }
+    }
+
+    10 = FLUIDTEMPLATE
+    10 {
+        file = EXT:typo3-devsite/Resources/Private/Templates/Site.html
+        extbase {
+            controllerExtensionName = Typo3Devsite
+        }
+
+        layoutRootPaths {
+            0 = EXT:typo3-devsite/Resources/Private/Layouts
+        }
+
+        templateRootPaths {
+            0 = EXT:typo3-devsite/Resources/Private/Templates
+        }
+
+        partialRootPaths {
+            0 = EXT:typo3-devsite/Resources/Private/Partials
+        }
+
+        variables {
+            siteName = TEXT
+            siteName.data = TSFE:TYPO3_CONF_VARS|SYS|sitename
+            mainNavigation < lib.mainNavigation
+            subNavigation < lib.subNavigation
+            breadcrumbs < lib.breadcrumbs
+        }
+    }
+}
