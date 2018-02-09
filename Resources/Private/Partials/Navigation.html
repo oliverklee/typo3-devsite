@@ -1,14 +1,19 @@
 <html xmlns:f="https://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<nav class="navbar navbar-default container">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="/">
-            {siteName}
-        </a>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        {siteName}
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            {navigation -> f:format.raw()}
+        </ul>
     </div>
-    <ul class="nav navbar-nav">
-        {navigation -> f:format.raw()}
-    </ul>
 </nav>
 
 </html>

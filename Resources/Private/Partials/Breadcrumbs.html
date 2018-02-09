@@ -1,7 +1,9 @@
 <html xmlns:f="https://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<ol class="breadcrumb container">
-    {breadcrumbs -> f:format.raw()}
-</ol>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {breadcrumbs -> f:format.raw()}
+    </ol>
+</nav>
 
 </html>

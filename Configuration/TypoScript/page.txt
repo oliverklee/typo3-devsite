@@ -6,12 +6,6 @@ page {
             disableCompression = 1
             excludeFromConcatenation = 1
         }
-
-        bootstrap-theme = EXT:typo3-devsite/Resources/Public/Css/bootstrap-theme.css
-        bootstrap-theme {
-            disableCompression = 1
-            excludeFromConcatenation = 1
-        }
     }
 
     # The version with the "L" is for TYPO3 CMS >= 7.6.
@@ -39,7 +33,7 @@ page {
     }
 
     includeJSFooterlibs {
-        bootstrap = EXT:typo3-devsite/Resources/Public/JavaScript/bootstrap.js
+        bootstrap = EXT:typo3-devsite/Resources/Public/JavaScript/bootstrap-bundle.js
         bootstrap {
             disableCompression = 1
             excludeFromConcatenation = 1
