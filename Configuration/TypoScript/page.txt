@@ -8,19 +8,7 @@ page {
         }
     }
 
-    # The version with the "L" is for TYPO3 CMS >= 7.6.
-    # jQuery intentionally does not get included in the footer so extensions like mkforms
-    # that require jQuery in the BODY don't break.
-    includeJSLibs {
-        jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.4.js
-        jQuery {
-            disableCompression = 1
-            excludeFromConcatenation = 1
-            forceOnTop = 1
-        }
-    }
-
-    # The version with the "lL" is for TYPO3 CMS 6.2
+    # The version with the "l" is for TYPO3 CMS 6.2
     # jQuery intentionally does not get included in the footer so extensions like mkforms
     # that require jQuery in the BODY don't break.
     includeJSlibs {
@@ -69,3 +57,18 @@ page {
         }
     }
 }
+
+[compatVersion = 7.6.0]
+    # jQuery intentionally does not get included in the footer so extensions like mkforms
+    # that require jQuery in the BODY don't break.
+    page.includeJSLibs {
+        jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.4.js
+        jQuery {
+            disableCompression = 1
+            excludeFromConcatenation = 1
+            forceOnTop = 1
+        }
+    }
+    # This line (and the condition, but not its contents) can be removed once this extension requires TYPO3 7.6.
+    page.includeJSlibs.jQuery >
+[GLOBAL]
