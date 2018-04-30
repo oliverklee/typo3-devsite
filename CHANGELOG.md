@@ -16,4 +16,5 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Removed
 
 ### Fixed
+- Fix deprecation log warnings in TYPO3 7.6 (#16)
 - Move config.txt to a location where it will be included (#15)
