@@ -21,7 +21,7 @@ page {
     }
 
     includeJSFooterlibs {
-        bootstrap = EXT:typo3-devsite/Resources/Public/JavaScript/bootstrap-bundle.js
+        bootstrap = EXT:typo3-devsite/Resources/Public/JavaScript/bootstrap.bundle.js
         bootstrap {
             disableCompression = 1
             excludeFromConcatenation = 1
