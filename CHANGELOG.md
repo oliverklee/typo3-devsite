@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+- Officially support PHP 7.2 (#22)
 - Enable detailed error messages in the FE (#21)
 - lint the TypoScript
 - Composer script for linting the PHP files
