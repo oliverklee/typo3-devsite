@@ -25,8 +25,8 @@
         "typo3/cms-frontend": "^6.2.14 || ^7.6.23 || ^8.7.9"
     },
     "require-dev": {
-        "helhum/typo3-composer-setup": "^0.5.1",
-        "helmich/typo3-typoscript-lint": "^1.4.4"
+        "helhum/typo3-composer-setup": "^0.5.3",
+        "helmich/typo3-typoscript-lint": "^1.4.7"
     },
     "replace": {
         "typo3_devsite": "self.version",
