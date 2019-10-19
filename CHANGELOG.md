@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Removed
 
 ### Fixed
+- Provide the extension icon in Resources/ (#23)
 - Fix path to the Bootstrap bundle JS (#17)
 - Fix deprecation log warnings in TYPO3 7.6 (#16)
 - Move config.txt to a location where it will be included (#15)
