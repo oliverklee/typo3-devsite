@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Removed
 
 ### Fixed
+- Keep development files out of the packages (#26)
 - Fix TYPO3-specific issues in composer.json (#24)
 - Provide the extension icon in Resources/ (#23)
 - Fix path to the Bootstrap bundle JS (#17)
