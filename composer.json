@@ -5,7 +5,7 @@
     "keywords": [
         "sitepackage"
     ],
-    "homepage": "https://www.oliverklee.de/typo3-services/typo3-extensions.html",
+    "homepage": "https://www.oliverklee.de/typo3-services/typo3-extensions/",
     "license": "GPL-3.0-or-later",
     "authors": [
         {
@@ -30,16 +30,9 @@
         "helmich/typo3-typoscript-lint": "^1.4.7"
     },
     "replace": {
-        "typo3_devsite": "self.version",
         "typo3-ter/typo3-devsite": "self.version"
     },
     "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://composer.typo3.org/"
-        }
-    ],
     "config": {
         "preferred-install": {
             "*": "dist"
@@ -73,6 +66,7 @@
             "dev-master": "1.0.x-dev"
         },
         "typo3/cms": {
+            "extension-key": "typo3_devsite",
             "cms-package-dir": "{$vendor-dir}/typo3/cms",
             "web-dir": ".Build/public"
         }
