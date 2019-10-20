@@ -13,6 +13,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Removed
 
+- Drop support for TYPO3 6.2 and PHP 5.x (#31)
+
 ### Fixed
 
 ## 1.0.1
