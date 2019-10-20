@@ -11,6 +11,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
+- Require fluid_styled_content (#35)
+
 ### Deprecated
 
 ### Removed
