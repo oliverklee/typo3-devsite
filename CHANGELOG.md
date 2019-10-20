@@ -6,6 +6,18 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+## 2.0.0
+
+### Added
 - Add PHP 7.3 to the Travis CI build (#36)
 - Support all versions of PHP 7.x (#34)
 
@@ -16,6 +28,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Require fluid_styled_content (#35)
 
 ### Deprecated
+- Support for TYPO3 7.6 will be dropped for version 3.0.
+- Support for PHP 5 will be dropped for version 3.0.
 
 ### Removed
 - Drop the .htaccess files for private folders (#41)
