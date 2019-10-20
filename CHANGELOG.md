@@ -17,9 +17,10 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Deprecated
 
 ### Removed
-- Drop support for TYPO3 6.2 and PHP 5.x (#31, #33)
+- Drop support for TYPO3 6.2 (#31, #33)
 
 ### Fixed
+- Re-add compatibility with PHP 5.5 for TYPO3 7.6 (#39)
 - Provide and reference the correct license files (#32) 
 
 ## 1.0.1
