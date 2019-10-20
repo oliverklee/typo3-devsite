@@ -24,25 +24,13 @@ Require the package `"oliverklee/typo3-devsite"`.
 Symlink the `typo3-devsite` folder as `typo3_devsite`
 (i.e., convert the hyphen to an underscore).
 
-### For TYPO3 CMS >= 7.6
-
-For TYPO3 CMS >= 7.6, the use of Fluid Styled Content is recommended.
+### Within the TYPO3 back end
 
 1. Uninstall the extension css_styled_content (if it is installed).
 2. Install the extension fluid_styled_content (provided by the Core).
 3. In your TypoScript template, include the following static templates:
     * Content Elements (fluid_styled content)
     * Content Elements CSS (optional) (fluid_styled content)
-    * TYPO3 development site (typo3-devsite)
-
-### For TYPO3 CMS 6.2
-
-For TYPO3 CMS 6.2, the use of CSS Styled Content is recommended.
-(The backport of Fluid Styled Content does not provide a login form yet.)
-
-2. Install the extension css_styled_content (provided by the Core).
-3. In your TypoScript template, include the following static templates:
-    * CSS Styled Content (css_styled_content)
     * TYPO3 development site (typo3-devsite)
 
 ### favicon.ico
