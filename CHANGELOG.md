@@ -7,15 +7,19 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- Support all versions of PHP 7.x (#34)
+
 ### Changed
 
 ### Deprecated
 
 ### Removed
 
-- Drop support for TYPO3 6.2 and PHP 5.x (#31)
+- Drop support for TYPO3 6.2 and PHP 5.x (#31, #33)
 
 ### Fixed
+
+- Provide and reference the correct license files (#32) 
 
 ## 1.0.1
 
