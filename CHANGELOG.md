@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Deprecated
 
 ### Removed
+- Remove the old extension icon files (#47) 
 - Drop support for PHP 5 (#44)
 - Drop support for TYPO3 7.6 (#43)
 
