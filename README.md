@@ -15,6 +15,15 @@ disabled, making debugging less of a pain.
 
 ## Installation
 
+### Installing via Composer
+
+Require the package `"oliverklee/typo3-devsite"`.
+
+### Installing without Composer
+
+Symlink the `typo3-devsite` folder as `typo3_devsite`
+(i.e., convert the hyphen to an underscore).
+
 ### For TYPO3 CMS >= 7.6
 
 For TYPO3 CMS >= 7.6, the use of Fluid Styled Content is recommended.
