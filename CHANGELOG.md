@@ -6,6 +6,18 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+## x.y.z
+
+### Added
 - Officially support PHP 7.2 (#22)
 - Enable detailed error messages in the FE (#21)
 - lint the TypoScript
@@ -15,8 +27,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Change the license to GPL V2+ (#27)
 
 ### Deprecated
-
-### Removed
+- Support for TYPO3 6.2 will be dropped in version 2.0
 
 ### Fixed
 - Keep development files out of the packages (#26)
