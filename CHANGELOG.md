@@ -6,27 +6,23 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
-
+- Add PHP 7.3 to the Travis CI build (#36)
 - Support all versions of PHP 7.x (#34)
 
 ### Changed
-
 - Require fluid_styled_content (#35)
 
 ### Deprecated
 
 ### Removed
-
 - Drop support for TYPO3 6.2 and PHP 5.x (#31, #33)
 
 ### Fixed
-
 - Provide and reference the correct license files (#32) 
 
 ## 1.0.1
 
 ### Fixed
-
 - Fix the extension name in the TypoScript template registration (#29, #30)
 
 ## 1.0.0
