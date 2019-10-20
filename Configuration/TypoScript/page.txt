@@ -11,7 +11,7 @@ page {
     # jQuery intentionally does not get included in the footer so extensions like mkforms
     # that require jQuery in the BODY don't break.
     includeJSLibs {
-        jQuery = EXT:typo3_devsite/Resources/Public/JavaScript/jquery-2.2.4.js
+        jQuery = EXT:typo3_devsite/Resources/Public/JavaScript/jquery-3.4.1.js
         jQuery {
             disableCompression = 1
             excludeFromConcatenation = 1
