@@ -1,7 +1,7 @@
 page = PAGE
 page {
     includeCSSLibs {
-        bootstrap = EXT:typo3-devsite/Resources/Public/Css/bootstrap.css
+        bootstrap = EXT:typo3_devsite/Resources/Public/Css/bootstrap.css
         bootstrap {
             disableCompression = 1
             excludeFromConcatenation = 1
@@ -12,7 +12,7 @@ page {
     # jQuery intentionally does not get included in the footer so extensions like mkforms
     # that require jQuery in the BODY don't break.
     includeJSlibs {
-        jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.4.js
+        jQuery = EXT:typo3_devsite/Resources/Public/JavaScript/jquery-2.2.4.js
         jQuery {
             disableCompression = 1
             excludeFromConcatenation = 1
@@ -21,7 +21,7 @@ page {
     }
 
     includeJSFooterlibs {
-        bootstrap = EXT:typo3-devsite/Resources/Public/JavaScript/bootstrap.bundle.js
+        bootstrap = EXT:typo3_devsite/Resources/Public/JavaScript/bootstrap.bundle.js
         bootstrap {
             disableCompression = 1
             excludeFromConcatenation = 1
@@ -31,21 +31,21 @@ page {
 
     10 = FLUIDTEMPLATE
     10 {
-        file = EXT:typo3-devsite/Resources/Private/Templates/Site.html
+        file = EXT:typo3_devsite/Resources/Private/Templates/Site.html
         extbase {
             controllerExtensionName = Typo3Devsite
         }
 
         layoutRootPaths {
-            0 = EXT:typo3-devsite/Resources/Private/Layouts
+            0 = EXT:typo3_devsite/Resources/Private/Layouts
         }
 
         templateRootPaths {
-            0 = EXT:typo3-devsite/Resources/Private/Templates
+            0 = EXT:typo3_devsite/Resources/Private/Templates
         }
 
         partialRootPaths {
-            0 = EXT:typo3-devsite/Resources/Private/Partials
+            0 = EXT:typo3_devsite/Resources/Private/Partials
         }
 
         variables {
@@ -62,7 +62,7 @@ page {
     # jQuery intentionally does not get included in the footer so extensions like mkforms
     # that require jQuery in the BODY don't break.
     page.includeJSLibs {
-        jQuery = EXT:typo3-devsite/Resources/Public/JavaScript/jquery-2.2.4.js
+        jQuery = EXT:typo3_devsite/Resources/Public/JavaScript/jquery-2.2.4.js
         jQuery {
             disableCompression = 1
             excludeFromConcatenation = 1

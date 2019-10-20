@@ -19,7 +19,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
-- Fix the extension name in the TypoScript template registration (#29)
+- Fix the extension name in the TypoScript template registration (#29, #30)
 
 ## 1.0.0
 
