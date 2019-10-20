@@ -6,18 +6,24 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
-- Mark as compatible with TYPO3 9.5 (#46)
 
 ### Changed
 
 ### Deprecated
 
 ### Removed
+
+### Fixed
+
+## 3.0.0
+
+### Added
+- Mark as compatible with TYPO3 9.5 (#46)
+
+### Removed
 - Remove the old extension icon files (#47) 
 - Drop support for PHP 5 (#44)
 - Drop support for TYPO3 7.6 (#43)
-
-### Fixed
 
 ## 2.0.0
 
