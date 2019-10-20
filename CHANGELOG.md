@@ -15,7 +15,13 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
-## x.y.z
+## 1.0.1
+
+### Fixed
+
+- Fix the extension name in the TypoScript template registration (#29)
+
+## 1.0.0
 
 ### Added
 - Officially support PHP 7.2 (#22)
