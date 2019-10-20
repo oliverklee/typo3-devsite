@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+- Mark as compatible with TYPO3 9.5 (#46)
 
 ### Changed
 
