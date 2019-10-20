@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Deprecated
 
 ### Removed
+- Drop the .htaccess files for private folders (#41)
 - Drop support for TYPO3 6.2 (#31, #33)
 
 ### Fixed
