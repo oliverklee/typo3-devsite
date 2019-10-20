@@ -30,21 +30,18 @@ page {
 
     10 = FLUIDTEMPLATE
     10 {
-        file = EXT:typo3_devsite/Resources/Private/Templates/Site.html
-        extbase {
-            controllerExtensionName = Typo3Devsite
-        }
+        templateName = Site
 
         layoutRootPaths {
-            0 = EXT:typo3_devsite/Resources/Private/Layouts
+            0 = EXT:typo3_devsite/Resources/Private/Layouts/Page
         }
 
         templateRootPaths {
-            0 = EXT:typo3_devsite/Resources/Private/Templates
+            0 = EXT:typo3_devsite/Resources/Private/Templates/Page
         }
 
         partialRootPaths {
-            0 = EXT:typo3_devsite/Resources/Private/Partials
+            0 = EXT:typo3_devsite/Resources/Private/Partials/Page
         }
 
         variables {
