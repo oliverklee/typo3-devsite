@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Support all versions of PHP 7.x (#34)
 
 ### Changed
+- Use the new content rendering TypoScript (#40, #2)
 - Update jQuery to 3.4.1 (#38)
 - Update Twitter Bootstrap to 4.3.1 (#37)
 - Require fluid_styled_content (#35)
