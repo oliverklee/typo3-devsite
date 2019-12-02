@@ -1,5 +1,5 @@
 config {
-    admPanel = 0
+    admPanel = 1
     doctype = html5
     xmlprologue = none
     xhtml_cleaning = none
