@@ -9,6 +9,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Enable the admin panel (#51)
 
 ### Changed
+- Move the static file registrations to `Configuration/TCA/` (#49, #52)
 
 ### Deprecated
 
