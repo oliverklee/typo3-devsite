@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Deprecated
 
 ### Removed
+- Drop the CSS and JavaScript source maps (#50)
 
 ### Fixed
 
