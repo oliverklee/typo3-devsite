@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+- Add a `.editorconfig` to match the Core (#72)
 - Enable the admin panel (#51)
 
 ### Changed
@@ -24,7 +25,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Mark as compatible with TYPO3 9.5 (#46)
 
 ### Removed
-- Remove the old extension icon files (#47) 
+- Remove the old extension icon files (#47)
 - Drop support for PHP 5 (#44)
 - Drop support for TYPO3 7.6 (#43)
 
@@ -50,7 +51,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 - Re-add compatibility with PHP 5.5 for TYPO3 7.6 (#39)
-- Provide and reference the correct license files (#32) 
+- Provide and reference the correct license files (#32)
 
 ## 1.0.1
 
