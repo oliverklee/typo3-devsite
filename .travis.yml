@@ -4,27 +4,27 @@ language: php
 
 cache:
   directories:
-  - .Build/vendor
-  - $HOME/.composer/cache
+    - .Build/vendor
+    - $HOME/.composer/cache
 
 before_install:
-- phpenv config-rm xdebug.ini || echo "xdebug not available"
+  - phpenv config-rm xdebug.ini || echo "xdebug not available"
 
 install:
-- composer require-typo3-version "$TYPO3"
-- git checkout .
-- export TYPO3_PATH_ROOT=$PWD/.Build/public
+  - composer require-typo3-version "$TYPO3"
+  - git checkout .
+  - export TYPO3_PATH_ROOT=$PWD/.Build/public
 
 script:
-- >
-  echo;
-  echo "Linting all PHP files";
-  composer ci:php:lint;
+  - >
+    echo;
+    echo "Linting all PHP files";
+    composer ci:php:lint;
 
-- >
-  echo;
-  echo "Linting all TypoScript files";
-  composer ci:ts:lint;
+  - >
+    echo;
+    echo "Linting all TypoScript files";
+    composer ci:ts:lint;
 
 jobs:
   include:
