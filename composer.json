@@ -1,75 +1,75 @@
 {
-    "name": "oliverklee/typo3-devsite",
-    "description": "TYPO3 extension that contains the basics of a site which Oliver Klee uses for developing in TYPO3.",
-    "type": "typo3-cms-extension",
-    "keywords": [
-        "sitepackage"
-    ],
-    "homepage": "https://www.oliverklee.de/typo3-services/typo3-extensions/",
-    "license": "GPL-2.0-or-later",
-    "authors": [
-        {
-            "name": "Oliver Klee",
-            "email": "typo3-coding@oliverklee.de",
-            "homepage": "https://www.oliverklee.de/",
-            "role": "developer"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/oliverklee/typo3-devsite/issues",
-        "source": "https://github.com/oliverklee/typo3-devsite"
-    },
-    "require": {
-        "php": "^7.0",
-        "typo3/cms-core": "^8.7.9 || ^9.5.0",
-        "typo3/cms-frontend": "^8.7 || ^9.5",
-        "typo3/cms-fluid": "^8.7 || ^9.5",
-        "typo3/cms-fluid-styled-content": "^8.7 || ^9.5"
-    },
-    "require-dev": {
-        "helhum/typo3-composer-setup": "^0.5.4",
-        "helmich/typo3-typoscript-lint": "^1.5.0 || ^2.0.1"
-    },
-    "replace": {
-        "typo3-ter/typo3-devsite": "self.version"
-    },
-    "prefer-stable": true,
-    "config": {
-        "preferred-install": {
-            "*": "dist"
-        },
-        "vendor-dir": ".Build/vendor"
-    },
-    "scripts": {
-        "ci:php:lint": "find *.php Configuration -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
-        "ci:ts:lint": "typoscript-lint -c Configuration/TsLint.yml --ansi -n --fail-on-warnings -vvv Configuration/TypoScript/",
-        "ci:static": [
-            "@ci:php:lint",
-            "@ci:ts:lint"
-        ],
-        "ci": [
-            "@ci:static"
-        ],
-        "require-typo3-version": [
-            "@php -r '$conf=json_decode(file_get_contents(__DIR__.\"/composer.json\"),true);$conf[\"require\"][\"typo3/cms-core\"]=$_SERVER[\"argv\"][1];file_put_contents(__DIR__.\"/composer.json\",json_encode($conf,JSON_UNESCAPED_SLASHES|JSON_PRETTY_PRINT).chr(10));'",
-            "@composer install"
-        ],
-        "link-extension": [
-            "@php -r 'is_dir($extFolder=__DIR__.\"/.Build/public/typo3conf/ext/\") || mkdir($extFolder, 0777, true);'",
-            "@php -r 'file_exists($extFolder=__DIR__.\"/.Build/public/typo3conf/ext/typo3_devsite\") || symlink(__DIR__,$extFolder);'"
-        ],
-        "post-autoload-dump": [
-            "@link-extension"
-        ]
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "3.0.x-dev"
-        },
-        "typo3/cms": {
-            "extension-key": "typo3_devsite",
-            "cms-package-dir": "{$vendor-dir}/typo3/cms",
-            "web-dir": ".Build/public"
-        }
-    }
+	"name": "oliverklee/typo3-devsite",
+	"description": "TYPO3 extension that contains the basics of a site which Oliver Klee uses for developing in TYPO3.",
+	"type": "typo3-cms-extension",
+	"keywords": [
+		"sitepackage"
+	],
+	"homepage": "https://www.oliverklee.de/typo3-services/typo3-extensions/",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Oliver Klee",
+			"email": "typo3-coding@oliverklee.de",
+			"homepage": "https://www.oliverklee.de/",
+			"role": "developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/oliverklee/typo3-devsite/issues",
+		"source": "https://github.com/oliverklee/typo3-devsite"
+	},
+	"require": {
+		"php": "^7.0",
+		"typo3/cms-core": "^8.7.9 || ^9.5.0",
+		"typo3/cms-frontend": "^8.7 || ^9.5",
+		"typo3/cms-fluid": "^8.7 || ^9.5",
+		"typo3/cms-fluid-styled-content": "^8.7 || ^9.5"
+	},
+	"require-dev": {
+		"helhum/typo3-composer-setup": "^0.5.4",
+		"helmich/typo3-typoscript-lint": "^1.5.0 || ^2.0.1"
+	},
+	"replace": {
+		"typo3-ter/typo3-devsite": "self.version"
+	},
+	"prefer-stable": true,
+	"config": {
+		"preferred-install": {
+			"*": "dist"
+		},
+		"vendor-dir": ".Build/vendor"
+	},
+	"scripts": {
+		"ci:php:lint": "find *.php Configuration -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+		"ci:ts:lint": "typoscript-lint -c Configuration/TsLint.yml --ansi -n --fail-on-warnings -vvv Configuration/TypoScript/",
+		"ci:static": [
+			"@ci:php:lint",
+			"@ci:ts:lint"
+		],
+		"ci": [
+			"@ci:static"
+		],
+		"require-typo3-version": [
+			"@php -r '$conf=json_decode(file_get_contents(__DIR__.\"/composer.json\"),true);$conf[\"require\"][\"typo3/cms-core\"]=$_SERVER[\"argv\"][1];file_put_contents(__DIR__.\"/composer.json\",json_encode($conf,JSON_UNESCAPED_SLASHES|JSON_PRETTY_PRINT).chr(10));'",
+			"@composer install"
+		],
+		"link-extension": [
+			"@php -r 'is_dir($extFolder=__DIR__.\"/.Build/public/typo3conf/ext/\") || mkdir($extFolder, 0777, true);'",
+			"@php -r 'file_exists($extFolder=__DIR__.\"/.Build/public/typo3conf/ext/typo3_devsite\") || symlink(__DIR__,$extFolder);'"
+		],
+		"post-autoload-dump": [
+			"@link-extension"
+		]
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "3.0.x-dev"
+		},
+		"typo3/cms": {
+			"extension-key": "typo3_devsite",
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": ".Build/public"
+		}
+	}
 }

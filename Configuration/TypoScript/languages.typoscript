@@ -1,17 +1,17 @@
 config {
-    linkVars = L(1)
+  linkVars = L(1)
 
-    language = de
-    sys_language_uid = 0
-    locale_all = de_DE
-    htmlTag_langKey = de_DE
+  language = de
+  sys_language_uid = 0
+  locale_all = de_DE
+  htmlTag_langKey = de_DE
 }
 
 [globalVar = _GET|L=1]
-    config {
-        language = en
-        sys_language_uid = 1
-        locale_all = en_US
-        htmlTag_langKey = en_US
-    }
+  config {
+    language = en
+    sys_language_uid = 1
+    locale_all = en_US
+    htmlTag_langKey = en_US
+  }
 [global]
