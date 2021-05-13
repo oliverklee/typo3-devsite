@@ -1,6 +1,7 @@
 # TYPO3 development site extension
 
 [![Build Status](https://travis-ci.org/oliverklee/typo3-devsite.svg?branch=main)](https://travis-ci.org/oliverklee/typo3-devsite)
+[![GitHub CI Status](https://github.com/oliverklee/typo3-devsite/workflows/CI/badge.svg?branch=main)](https://github.com/oliverklee/typo3-devsite/actions)
 [![Latest Stable Version](https://poser.pugx.org/oliverklee/typo3-devsite/v/stable.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
 [![Total Downloads](https://poser.pugx.org/oliverklee/typo3-devsite/downloads.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
 [![Latest Unstable Version](https://poser.pugx.org/oliverklee/typo3-devsite/v/unstable.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
