@@ -26,10 +26,6 @@
 		"typo3/cms-fluid": "^8.7 || ^9.5",
 		"typo3/cms-fluid-styled-content": "^8.7 || ^9.5"
 	},
-	"require-dev": {
-		"helhum/typo3-composer-setup": "^0.5.4",
-		"helmich/typo3-typoscript-lint": "^1.5.0 || ^2.0.1"
-	},
 	"replace": {
 		"typo3-ter/typo3-devsite": "self.version"
 	},
@@ -42,10 +38,8 @@
 	},
 	"scripts": {
 		"ci:php:lint": "find *.php Configuration -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
-		"ci:ts:lint": "typoscript-lint -c Configuration/TsLint.yml --ansi -n --fail-on-warnings -vvv Configuration/TypoScript/",
 		"ci:static": [
-			"@ci:php:lint",
-			"@ci:ts:lint"
+			"@ci:php:lint"
 		],
 		"ci": [
 			"@ci:static"
