@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+- Add JSON and YAML linting to the CI build (#78)
 - Add PHP 8 compatibility (#77)
 - Add a `.editorconfig` to match the Core (#72)
 - Enable the admin panel (#51)
