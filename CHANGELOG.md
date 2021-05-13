@@ -22,6 +22,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Drop the CSS and JavaScript source maps (#50)
 
 ### Fixed
+- Use the official TYPO3 Fluid XML namespace (#87)
 - Add margin to make space for the admin panel (#85)
 - Disabled unused backend columns (#84)
 - Use the UTF8-enabled locales (#83)
