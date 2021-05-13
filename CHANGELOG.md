@@ -6,6 +6,18 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+## 3.1.0
+
+### Added
 - Add JSON and YAML linting to the CI build (#78)
 - Add PHP 8 compatibility (#77)
 - Add a `.editorconfig` to match the Core (#72)
@@ -15,8 +27,6 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Move the CI from Travis CI to GitHub Actions (#76, #79, #80, #82)
 - Change the default git branch from `master` to `main` (#75)
 - Move the static file registrations to `Configuration/TCA/` (#49, #52)
-
-### Deprecated
 
 ### Removed
 - Drop the CSS and JavaScript source maps (#50)
