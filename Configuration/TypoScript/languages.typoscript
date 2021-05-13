@@ -3,7 +3,7 @@ config {
 
   language = de
   sys_language_uid = 0
-  locale_all = de_DE
+  locale_all = de_DE.utf8
   htmlTag_langKey = de_DE
 }
 
@@ -11,7 +11,7 @@ config {
   config {
     language = en
     sys_language_uid = 1
-    locale_all = en_US
+    locale_all = en_US.utf8
     htmlTag_langKey = en_US
   }
 [global]

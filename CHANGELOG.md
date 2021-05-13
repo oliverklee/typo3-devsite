@@ -22,6 +22,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Drop the CSS and JavaScript source maps (#50)
 
 ### Fixed
+- Use the UTF8-enabled locales (#83)
 
 ## 3.0.0
 
