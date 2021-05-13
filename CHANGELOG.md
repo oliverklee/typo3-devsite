@@ -12,7 +12,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Enable the admin panel (#51)
 
 ### Changed
-- Move the CI from Travis CI to GitHub Actions (#76)
+- Move the CI from Travis CI to GitHub Actions (#76, #79, #80)
 - Change the default git branch from `master` to `main` (#75)
 - Move the static file registrations to `Configuration/TCA/` (#49, #52)
 
