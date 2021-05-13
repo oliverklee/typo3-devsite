@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Deprecated
 
 ### Removed
+- Drop support for PHP 7.0 and 7.1 (#91)
 
 ### Fixed
 
