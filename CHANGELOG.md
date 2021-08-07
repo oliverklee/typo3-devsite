@@ -8,6 +8,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Added
 
 ### Changed
+- Upgrade to Bootstrap 5.1 (#93)
+- Update to jQuery 3.6.0 (#92)
 
 ### Deprecated
 
