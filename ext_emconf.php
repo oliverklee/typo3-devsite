@@ -1,5 +1,5 @@
 <?php
-$EM_CONF[$_EXTKEY] = [
+$EM_CONF['typo3_devsite'] = [
     'title' => 'TYPO3 CMS development site',
     'description' => 'Contains the basics of a site which Oliver Klee uses for developing in TYPO3.',
     'category' => 'services',

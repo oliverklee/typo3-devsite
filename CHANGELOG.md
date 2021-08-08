@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Drop support for PHP 7.0 and 7.1 (#91)
 
 ### Fixed
+- Stop using `$_EXTKEY` (#97)
 
 ## 3.1.0
 
