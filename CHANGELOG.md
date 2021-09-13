@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+- Add support for TYPO3 10LTS (#100)
 
 ### Changed
 - Upgrade to Bootstrap 5.1 (#93)
