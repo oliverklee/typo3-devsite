@@ -1,4 +1,3 @@
 <INCLUDE_TYPOSCRIPT: source="DIR: ./lib" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./config.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:./languages.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./page.typoscript">
