@@ -15,14 +15,11 @@ disabled, making debugging less of a pain.
 
 ## Installation
 
-### Installing via Composer
+This package should only be installed via Composer, not from the TER.
+
+### Installing the package via Composer
 
 Require the package `"oliverklee/typo3-devsite"`.
-
-### Installing without Composer
-
-Symlink the `typo3-devsite` folder as `typo3_devsite`
-(i.e., convert the hyphen to an underscore).
 
 ### Within the TYPO3 back end
 
