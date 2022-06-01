@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+- Set up Dependabot to update the GitHub Actions (#108)
 - Add support for TYPO3 10LTS (#100)
 
 ### Changed
