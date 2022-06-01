@@ -10,7 +10,7 @@ on:
 jobs:
   php-lint:
     name: "PHP linter"
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: "Checkout"
         uses: actions/checkout@v3
@@ -32,7 +32,7 @@ jobs:
           - 8.1
   typoscript-lint:
     name: "TypoScript linter"
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: "Checkout"
         uses: actions/checkout@v3
@@ -40,7 +40,7 @@ jobs:
         uses: TYPO3-Continuous-Integration/TYPO3-CI-Typoscript-Lint@v1
   yaml-lint:
     name: "YAML linter"
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: "Checkout"
         uses: actions/checkout@v3
@@ -48,7 +48,7 @@ jobs:
         uses: TYPO3-Continuous-Integration/TYPO3-CI-YAML-Lint@v1
   json-lint:
     name: "JSON linter"
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: "Checkout"
         uses: actions/checkout@v3
