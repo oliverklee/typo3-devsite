@@ -6,6 +6,18 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+## 4.0.0
+
+### Added
 - Set up Dependabot to update the GitHub Actions (#108)
 - Add support for TYPO3 10LTS (#100)
 
@@ -14,14 +26,10 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Upgrade to Bootstrap 5.1.3 (#93, #102, #111)
 - Update to jQuery 3.6.0 (#92)
 
-### Deprecated
-
 ### Removed
 - Drop the legacy language handling with the "L" parameter (#)
 - Drop support for TYPO3 8LTS (#95)
 - Drop support for PHP 7.0 and 7.1 (#91)
-
-### Fixed
 
 ## 3.1.0
 
