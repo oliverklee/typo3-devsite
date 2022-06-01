@@ -10,7 +10,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Add support for TYPO3 10LTS (#100)
 
 ### Changed
-- Upgrade to Bootstrap 5.1.1 (#93, #102)
+- Upgrade to Bootstrap 5.1.3 (#93, #102, #111)
 - Update to jQuery 3.6.0 (#92)
 
 ### Deprecated
