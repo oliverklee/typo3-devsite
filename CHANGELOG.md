@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Added
 
 ### Changed
+- Update to Bootstrap 5.2.0-beta1 (#116)
 
 ### Deprecated
 
