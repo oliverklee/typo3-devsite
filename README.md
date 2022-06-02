@@ -1,10 +1,10 @@
 # TYPO3 development site extension
 
-[![GitHub CI Status](https://github.com/oliverklee/typo3-devsite/workflows/CI/badge.svg?branch=main)](https://github.com/oliverklee/typo3-devsite/actions)
-[![Latest Stable Version](https://poser.pugx.org/oliverklee/typo3-devsite/v/stable.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
-[![Total Downloads](https://poser.pugx.org/oliverklee/typo3-devsite/downloads.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
-[![Latest Unstable Version](https://poser.pugx.org/oliverklee/typo3-devsite/v/unstable.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
+[![TYPO3 V10](https://img.shields.io/badge/TYPO3-10-orange.svg)](https://get.typo3.org/version/10)
+[![TYPO3 V11](https://img.shields.io/badge/TYPO3-11-orange.svg)](https://get.typo3.org/version/11)
 [![License](https://poser.pugx.org/oliverklee/typo3-devsite/license.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
+[![Total Downloads](https://poser.pugx.org/oliverklee/typo3-devsite/downloads.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
+[![GitHub CI Status](https://github.com/oliverklee/typo3-devsite/workflows/CI/badge.svg?branch=main)](https://github.com/oliverklee/typo3-devsite/actions)
 
 This is a TYPO3 extension that contains the basics of a site which
 I use for developing in TYPO3. It helps to create a working site
