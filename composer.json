@@ -1,12 +1,11 @@
 {
 	"name": "oliverklee/typo3-devsite",
 	"description": "TYPO3 extension that contains the basics of a site which Oliver Klee uses for developing in TYPO3.",
+	"license": "GPL-2.0-or-later",
 	"type": "typo3-cms-extension",
 	"keywords": [
 		"sitepackage"
 	],
-	"homepage": "https://www.oliverklee.de/typo3-services/typo3-extensions/",
-	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
 			"name": "Oliver Klee",
@@ -15,6 +14,7 @@
 			"role": "developer"
 		}
 	],
+	"homepage": "https://www.oliverklee.de/typo3-services/typo3-extensions/",
 	"support": {
 		"issues": "https://github.com/oliverklee/typo3-devsite/issues",
 		"source": "https://github.com/oliverklee/typo3-devsite"
@@ -22,41 +22,53 @@
 	"require": {
 		"php": ">= 7.2",
 		"typo3/cms-core": "^10.4 || ^11.5",
-		"typo3/cms-frontend": "^10.4 || ^11.5",
 		"typo3/cms-fluid": "^10.4 || ^11.5",
-		"typo3/cms-fluid-styled-content": "^10.4 || ^11.5"
+		"typo3/cms-fluid-styled-content": "^10.4 || ^11.5",
+		"typo3/cms-frontend": "^10.4 || ^11.5"
+	},
+	"require-dev": {
+		"ergebnis/composer-normalize": "^2.19.0"
 	},
 	"replace": {
 		"typo3-ter/typo3-devsite": "self.version"
 	},
 	"prefer-stable": true,
 	"config": {
+		"allow-plugins": {
+			"ergebnis/composer-normalize": true,
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
+		},
 		"preferred-install": {
 			"*": "dist"
 		},
-		"vendor-dir": ".Build/vendor",
-		"allow-plugins": {
-			"typo3/class-alias-loader": true,
-			"typo3/cms-composer-installers": true
-		}
-	},
-	"scripts": {
-		"ci:php:lint": "find *.php Configuration -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
-		"ci:static": [
-			"@ci:php:lint"
-		],
-		"ci": [
-			"@ci:static"
-		]
+		"vendor-dir": ".Build/vendor"
 	},
 	"extra": {
 		"branch-alias": {
 			"dev-main": "5.0.x-dev"
 		},
 		"typo3/cms": {
-			"extension-key": "typo3_devsite",
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"extension-key": "typo3_devsite",
 			"web-dir": ".Build/public"
 		}
+	},
+	"scripts": {
+		"ci": [
+			"@ci:static"
+		],
+		"ci:composer:normalize": "@composer normalize --dry-run",
+		"ci:php:lint": "find *.php Configuration -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+		"ci:static": [
+			"@ci:php:lint",
+			"@ci:composer:normalize"
+		]
+	},
+	"scripts-descriptions": {
+		"ci": "Runs all dynamic and static code checks.",
+		"ci:composer:normalize": "Checks the composer.json.",
+		"ci:php:lint": "Lints the PHP files for syntax errors.",
+		"ci:static": "Runs all static code checks (syntax, style, types)."
 	}
 }
