@@ -91,3 +91,81 @@ jobs:
           - "composer:normalize"
         php-version:
           - 7.2
+
+  typo3-install:
+    name: "Install with TYPO3"
+    runs-on: ubuntu-22.04
+    needs: php-lint
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v3
+      - name: "Install PHP"
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "${{ matrix.php-version }}"
+          coverage: none
+          tools: composer:v2.3
+      - name: "Show Composer version"
+        run: composer --version
+      - name: "Cache dependencies installed with composer"
+        uses: actions/cache@v3
+        with:
+          key: "php${{ matrix.php-version }}-typo3${{ matrix.typo3-version }}-${{ matrix.composer-dependencies }}-composer-${{ hashFiles('**/composer.json') }}"
+          path: ~/.cache/composer
+          restore-keys: "php${{ matrix.php-version }}-typo3${{ matrix.typo3-version }}-${{ matrix.composer-dependencies }}-composer-\n"
+      - name: "Install TYPO3 Core"
+        env:
+          TYPO3: "${{ matrix.typo3-version }}"
+        run: |
+          composer require --no-ansi --no-interaction --no-progress --no-install typo3/minimal:"$TYPO3"
+          composer show
+      - name: "Install lowest dependencies with composer"
+        if: "matrix.composer-dependencies == 'lowest'"
+        run: |
+          composer update --no-ansi --no-interaction --no-progress --with-dependencies --prefer-lowest
+          composer show
+      - name: "Install highest dependencies with composer"
+        if: "matrix.composer-dependencies == 'highest'"
+        run: |
+          composer update --no-ansi --no-interaction --no-progress --with-dependencies
+          composer show
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - typo3-version: ^10.4
+            php-version: 7.2
+            composer-dependencies: highest
+          - typo3-version: ^10.4
+            php-version: 7.2
+            composer-dependencies: lowest
+          - typo3-version: ^10.4
+            php-version: 7.3
+            composer-dependencies: highest
+          - typo3-version: ^10.4
+            php-version: 7.3
+            composer-dependencies: lowest
+          - typo3-version: ^10.4
+            php-version: 7.4
+            composer-dependencies: highest
+          - typo3-version: ^10.4
+            php-version: 7.4
+            composer-dependencies: lowest
+          - typo3-version: ^11.5
+            php-version: 7.4
+            composer-dependencies: highest
+          - typo3-version: ^11.5
+            php-version: 7.4
+            composer-dependencies: lowest
+          - typo3-version: ^11.5
+            php-version: 8.0
+            composer-dependencies: highest
+          - typo3-version: ^11.5
+            php-version: 8.0
+            composer-dependencies: lowest
+          - typo3-version: ^11.5
+            php-version: 8.1
+            composer-dependencies: highest
+          - typo3-version: ^11.5
+            php-version: 8.1
+            composer-dependencies: lowest
