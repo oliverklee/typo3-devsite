@@ -54,3 +54,34 @@ jobs:
         uses: actions/checkout@v3
       - name: "Run JSON lint"
         uses: TYPO3-Continuous-Integration/TYPO3-CI-JSON-Lint@v1
+  code-quality:
+    name: "Code quality checks"
+    runs-on: ubuntu-20.04
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v3
+      - name: "Install PHP"
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "${{ matrix.php-version }}"
+          coverage: none
+          tools: composer:v2.3
+      - name: "Show Composer version"
+        run: composer --version
+      - name: "Cache dependencies installed with composer"
+        uses: actions/cache@v3
+        with:
+          key: "php${{ matrix.php-version }}-composer-${{ hashFiles('**/composer.json') }}"
+          path: ~/.cache/composer
+          restore-keys: "php${{ matrix.php-version }}-composer-\n"
+      - name: "Install Composer dependencies"
+        run: "composer install --no-progress"
+      - name: "Run command"
+        run: "composer ci:${{ matrix.command }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        command:
+          - "composer:normalize"
+        php-version:
+          - 7.2
