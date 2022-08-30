@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+- Add support for PHP 8.2 (#138)
 - Add a CI step to check that the package is installable with TYPO3 (#128)
 - Add `composer normalize` to the CI builds (#125)
 - Add support for TYPO3 11LTS (#117, #121)
