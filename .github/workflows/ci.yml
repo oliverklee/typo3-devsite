@@ -90,7 +90,7 @@ jobs:
         command:
           - "composer:normalize"
         php-version:
-          - 7.2
+          - 8.1
 
   typo3-install:
     name: "Install with TYPO3"
