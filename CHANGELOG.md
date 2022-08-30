@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Add support for TYPO3 11LTS (#117, #121)
 
 ### Changed
+- Require TYPO3 >= 10.4.11 (#140)
 - Update to jQuery 3.6.1 (#136)
 - Update to Bootstrap 5.2.0-beta1 (#116)
 
