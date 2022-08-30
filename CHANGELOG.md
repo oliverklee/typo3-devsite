@@ -14,7 +14,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Changed
 - Require TYPO3 >= 10.4.11 (#140)
 - Update to jQuery 3.6.1 (#136)
-- Update to Bootstrap 5.2.0-beta1 (#116)
+- Update to Bootstrap 5.2.0 (#116, #143)
 
 ### Deprecated
 
