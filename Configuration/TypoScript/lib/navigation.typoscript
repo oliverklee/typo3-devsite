@@ -9,6 +9,7 @@ lib {
 
       NO {
         allWrap = <li class="nav-item"> | </li>
+        stdWrap.htmlSpecialChars = 1
         ATagParams = class="nav-link"
       }
 
@@ -30,6 +31,7 @@ lib {
 
       NO {
         allWrap = <li class="nav-item"> | </li>
+        stdWrap.htmlSpecialChars = 1
         ATagParams = class="nav-link"
       }
 
@@ -48,8 +50,12 @@ lib {
     includeNotInMenu = 1
     1 = TMENU
     1 {
-      NO.allWrap = <li class="breadcrumb-item"> | </li>
+      NO {
+        allWrap = <li class="breadcrumb-item"> | </li>
+        stdWrap.htmlSpecialChars = 1
+      }
 
+      CUR < .NO
       CUR = 1
       CUR {
         allWrap = <li class="breadcrumb-item active" aria-current="page"> | </li>
