@@ -15,4 +15,11 @@ config {
   simulateStaticDocuments = 0
 
   contentObjectExceptionHandler = 0
+
+  pageTitleProviders {
+    eventTitle {
+      provider = OliverKlee\Seminars\Seo\SingleViewPageTitleProvider
+      before = record
+    }
+  }
 }
