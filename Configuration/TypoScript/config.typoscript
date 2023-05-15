@@ -12,7 +12,6 @@ config {
   concatenateCss = 0
 
   absRefPrefix = /
-  simulateStaticDocuments = 0
 
   contentObjectExceptionHandler = 0
 
