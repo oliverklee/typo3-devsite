@@ -2,10 +2,6 @@ page = PAGE
 page {
   includeCSSLibs {
     bootstrap = EXT:typo3_devsite/Resources/Public/Css/bootstrap.css
-    bootstrap {
-      disableCompression = 1
-      excludeFromConcatenation = 1
-    }
   }
 
   # jQuery intentionally does not get included in the footer so extensions like mkforms
@@ -13,8 +9,6 @@ page {
   includeJSLibs {
     jQuery = EXT:typo3_devsite/Resources/Public/JavaScript/jquery-3.7.0.js
     jQuery {
-      disableCompression = 1
-      excludeFromConcatenation = 1
       forceOnTop = 1
     }
   }
@@ -22,8 +16,6 @@ page {
   includeJSFooterlibs {
     bootstrap = EXT:typo3_devsite/Resources/Public/JavaScript/bootstrap.bundle.js
     bootstrap {
-      disableCompression = 1
-      excludeFromConcatenation = 1
       async = 1
     }
   }
