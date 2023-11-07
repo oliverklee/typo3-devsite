@@ -1,10 +1,10 @@
 # TYPO3 development site extension
 
-[![TYPO3 V10](https://img.shields.io/badge/TYPO3-10-orange.svg)](https://get.typo3.org/version/10)
-[![TYPO3 V11](https://img.shields.io/badge/TYPO3-11-orange.svg)](https://get.typo3.org/version/11)
 [![License](https://poser.pugx.org/oliverklee/typo3-devsite/license.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
-[![Total Downloads](https://poser.pugx.org/oliverklee/typo3-devsite/downloads.svg)](https://packagist.org/packages/oliverklee/typo3-devsite)
-[![GitHub CI Status](https://github.com/oliverklee/typo3-devsite/workflows/CI/badge.svg?branch=main)](https://github.com/oliverklee/typo3-devsite/actions)
+
+> :warning: This extension has been integrated into my
+> [Testing distribution](https://github.com/oliverklee/TYPO3-testing-distribution).
+> Hence, this repository here is no longer maintained.
 
 This is a TYPO3 extension that contains the basics of a site which
 I use for developing in TYPO3. It helps to create a working site
